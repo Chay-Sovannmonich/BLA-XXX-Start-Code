@@ -19,7 +19,7 @@ class RidesService {
   //  filter the rides starting for the given requested seat number
   //
   static List<Ride> _filterBySeatRequested(int requestedSeat) {
-    return availableRides.where((ride) => ride.seatleft >= requestedSeat).toList();
+    return availableRides.where((ride) => ride.remainingSeats >= requestedSeat).toList();
   }
   //
   //  filter the rides   with several optional criteria (flexible filter options)

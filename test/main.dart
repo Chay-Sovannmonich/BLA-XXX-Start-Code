@@ -1,6 +1,7 @@
+
 import 'package:flutter/material.dart';
-import '../blablacar/lib/screens/ride_pref/ride_pref_screen.dart';
-import '../blablacar/lib/theme/theme.dart';
+import 'button_test.dart';  // Add this import
+import '../lib/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: appTheme,
-      home: Scaffold(body: RidePrefScreen()),
+      home: const TestButtonScreen(),  // ← Show test screen instead
     );
   }
 }
